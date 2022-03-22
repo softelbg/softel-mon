@@ -1,0 +1,52 @@
+
+syntax = "proto3";
+package SF.TRADE;
+option optimize_for = SPEED;
+
+
+message MarketDataProto
+{
+	string symbol = 1;
+	double bid = 2;
+	double ask = 3;
+	double volume = 4;
+	int64 timestamp = 5;
+}
+
+
+enum EnMsgTypeProto
+{
+	Undefined								= 0;
+	setMachineOwnerRequest                  = 1;
+	getMachineOwnerRequest                  = 2;
+	UserMessageProtoResponse				= 3;
+	EmptyMessageProtoResponse				= 4;
+}
+
+message BaseMessageProto
+{
+    EnMsgTypeProto msgType = 1;
+}	
+
+message EmptyMessageProto
+{
+	int32 id = 1;
+}
+
+enum EnFlowControlProto
+{
+	Fetch			= 0;
+	FetchRequest	= 1;
+	SetFetch		= 2;
+	Ping			= 3;
+}
+message FlowControlProto
+{
+	int32 cmd	= 1;
+	int32 count = 2;
+}
+
+message UpdateMessageProto
+{
+	string component = 1;
+}

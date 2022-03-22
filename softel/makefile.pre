@@ -1,0 +1,71 @@
+#
+# (C) Copyright Softel (softel.bg) 2012. All rights reserved.
+#
+#
+# Description: This is the Makefile pre-Include 
+#
+.SILENT:
+
+SHELL=/bin/sh
+
+CFLAGS += -std=c++11
+#ifeq "$(BUILDTYPE)" "debug"
+    CFLAGS += -g
+    LFLAGS += -g
+#endif
+
+BIN  = ../../../bin
+LIB  = ../../../lib
+
+CCTYPE = cc
+CC = c++
+AR = ar
+ADD = r
+DELETE = d
+LD = ld
+
+LIBSFWEB = sfweb
+LIBSFCORE = sfcore
+LIBSFDSP = sfcore
+LIBSFMON = sfcore
+LIBSFDB = sfcore
+LIBSFOSS = sfcore
+LIBSFEXEC = sfcore
+#LIBSFOSS = sfoss
+#LIBSFEXEC = sfexec
+#LIBSFMON = sfmon
+#LIBSFDB = sfdb
+LIBSFTRADE = sftrade
+
+INCPATH += -I/usr/local/include/
+INCPATH += -I../../../../../
+INCPATH += -I../../../../
+INCPATH += -I../../../
+INCPATH += -I../../
+INCPATH += -I/usr/local/include/bsoncxx/v_noabi/ -I/usr/local/include/mongocxx/v_noabi/
+
+LIBPATH += -L/usr/local/lib/
+LIBPATH += -L/usr/local/lib64/
+LIBPATH += -L/usr/lib64/
+
+CFLAGS += -Wall
+
+LFLAGS += -lz
+LFLAGS += -lnetsnmp
+LFLAGS += -lcrypto
+LFLAGS += -lm
+LFLAGS += -lpthread
+LFLAGS += -lrt
+LFLAGS += -lboost_system -lboost_signals -lboost_thread-mt -lboost_thread -lboost_filesystem
+#LFLAGS += -lmysqlclient_r
+LFLAGS += -lmongocxx -lbsoncxx
+LFLAGS += -lzmq
+LFLAGS += -ltbb
+LFLAGS += -levent -lprotobuf -lthrift -lthriftnb
+
+ifeq "$(BUILDTYPE)" "debug"
+    LFLAGS += -ltbb_debug
+else
+	LFLAGS += -ltbb
+endif
+

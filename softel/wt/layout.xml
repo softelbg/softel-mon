@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<messages>
+
+<message id="escrow">
+
+<div class="form">
+  <p>
+    <label>name ${name-edit}</label>
+	<label>to ${to-edit}</label>
+	<label>amount ${amount-edit}</label>
+	<label>currency ${currency-edit}</label>
+  </p>
+  <p>
+    ${save-button} ${cancel-button}
+  </p>
+</div>
+
+</message>
+
+
+<message id="trading">
+
+<div class="form">
+  <p>
+    <label>name ${name-edit}</label>
+	<label>to ${to-edit}</label>
+	<label>amount ${amount-edit}</label>
+	<label>currency ${currency-edit}</label>
+  </p>
+  <p>
+    ${save-button} ${cancel-button}
+  </p>
+</div>
+
+</message>
+
+
+<message id="OrderMarket">
+<div class="form">
+
+  <div class="ks-panel-1">
+    <p>${clear-button} ${demo-start-button}</p>
+    <p><label>User (dummy login) ${user-edit}</label><label>${user-info}</label></p>
+  </div>
+  
+  <div class="ks-panel-1">
+	  <p>
+	  	<p>${symbol-desc}</p>
+                <p><label>Symbol ${symbol-edit} ${symbolDst-edit}</label></p>
+	  	<p><label>Price ${price-edit} Volume ${volume-edit} </label> <label class="ks-font-2-bold"> ${symbol-measure} </label></p>
+	  </p>
+	  <p>
+	    ${sell-button} ${buy-button}
+	  </p>
+	  <p>
+	  	<label>Result: ${result-edit}</label>
+	  </p>
+  </div>
+  
+</div>
+</message>
+
+
+<message id="OrderForex">
+<div class="form">
+  <div class="ks-panel-1">
+    <p>${clear-button}</p>
+    <p><label>User (dummy login) ${user-edit}</label></p>
+  </div>
+  
+  <div class="ks-panel-1">
+  <p>
+  	<p><label>Symbol ${symbol-edit}</label></p>
+  	<p><label>Volume ${volume-edit}</label></p>
+  	<p><label>Stop Loss ${sl-edit} Take Profit ${tp-edit}</label></p>
+  	<p><label>Comment ${comment-edit}</label></p>
+	<p><label>Type &nbsp;&nbsp;&nbsp; ${type-edit}</label></p>
+  </p>
+  
+  <p>${MarketExecution-type}</p>
+  <p>${Pending-type}</p>
+    
+  <p>
+  	<label>Result: ${result-edit}</label>
+  </p>
+  </div>
+  
+</div>
+</message>
+
+<message id="OrderForexMarketExecution">
+<div class="ks-panel-1">
+  <p><label class="ks-font-2-bold">Market Execution</label></p>
+  <p>
+    <p><label class="ks-font-3-bold">${bid-print} ${ask-print}</label></p>
+  	<p>${sell-button} ${buy-button}</p>
+  </p>
+</div>
+</message>
+
+<message id="OrderForexPending">
+<div class="ks-panel-1">
+  <p><label class="ks-font-2-bold">Pending Order</label></p>
+  <p>
+    <p><label>Type ${typePending-edit} ${symbolvolume-print}</label></p>
+  	<p><label>Price ${price-edit}</label> ${place-button}</p>
+  	<p><label>Expiry ${expiry-edit}</label></p>
+  </p>
+</div>
+</message>
+
+
+<message id="OrderItem">
+
+<div class="form">
+  <div class="ks-panel-1">
+    <p>${clear-button}</p>
+    <p><label>User (dummy login) ${user-edit}</label></p>
+  </div>
+  
+  <div class="ks-panel-1">
+  <p>
+  	<table>
+	  <tr>
+	    <td>Symbol</td>
+	    <td>${symbol-edit}</td>
+	  </tr>
+	  <tr>
+	    <td>Price </td>
+	    <td>${price-edit} ${symbolDst-edit}</td>
+	  </tr>
+	  <tr>
+	    <td>Volume </td>
+	    <td>${volume-edit}</td>
+	  </tr>
+	</table>
+  </p>
+  <p>
+    ${sell-button} ${buy-button}
+  </p>
+  </div>
+</div>
+
+</message>
+
+
+<message id="TradeMachine">
+
+<div class="ks-panel-1">
+  <p>
+  	<p><label>${order-edit}</label></p>
+  </p>
+  <p>
+  	<p><label class="ks-font-1-bold">Orders Book</label></p>
+    ${trade-table}
+  </p>
+  <p>
+  	<p><label class="ks-font-1-bold">History of Orders</label></p>
+    ${tradeHistory-table}
+  </p>
+</div>
+
+</message>
+
+
+<message id="ForexMachine">
+
+<div class="ks-panel-1">
+  <p>
+  	<p><label>Live Market Data</label></p>
+  	${marketdata-table}
+  </p>
+  <p>
+  	<p><label>${order-edit}</label></p>
+  </p>
+  <p>
+  	<p><label class="ks-font-1-bold">Orders Book</label></p>
+    ${trade-table}
+  </p>
+  <p>
+  	<p><label class="ks-font-1-bold">History of Orders</label></p>
+    ${tradeHistory-table}
+  </p>
+</div>
+
+</message>
+
+
+<message id="ItemTradeMachine">
+
+<div class="ks-panel-1">
+  <p>
+  	<p><label>${order-edit}</label></p>
+  </p>
+  <p>
+  	<p><label class="ks-font-1-bold">Orders Book</label></p>
+    ${trade-table}
+  </p>
+  <p>
+  	<p><label class="ks-font-1-bold">History of Orders</label></p>
+    ${tradeHistory-table}
+  </p>
+</div>
+
+</message>
+
+<message id="TallentTradeMachine">
+<div class="ks-panel-1">
+  <p>
+  	<p><label>${order-edit}</label></p>
+  </p>
+  <p>
+  	<p><label class="ks-font-1-bold">Orders Book</label></p>
+    ${trade-table}
+  </p>
+  <p>
+  	<p><label class="ks-font-1-bold">History of Orders</label></p>
+    ${tradeHistory-table}
+  </p>
+</div>
+</message>
+
+<message id="TallentView">
+	  <p>
+	  	<p><label>Skills ${skills-print}</label></p>
+	  </p>
+	  <p>
+	    ${sell-button}
+	  </p>
+</message>
+
+<message id="HRView">
+	  <p>
+	    ${buy-button}
+	  </p>
+</message>
+
+<message id="OrderTallent">
+<div class="form">
+  <div class="ks-panel-1">
+    <p>${clear-button} ${demo-start-button}</p>
+    <p><label>User (dummy login) ${user-edit}</label></p>
+  </div>
+  
+  <div class="ks-panel-1">
+  	<tr>
+	    <td>Tallent</td>
+		<td>${symbol-edit}</td>
+	</tr>
+  	<p><label>Price &nbsp;&nbsp; ${price-edit} ${symbolDst-edit}</label></p>
+	<p><label>Volume ${volume-edit} </label> <label class="ks-font-2-bold"> ${symbol-measure} </label></p>
+	
+	<p>${tallent-view}</p>
+ 	<p>${hr-view}</p>
+ 	
+  </div>
+</div>
+</message>
+
+
+<message id="SymbolManagement">
+<div class="ks-panel-1">
+  <p><label class="ks-font-2-bold">Symbols</label></p>
+  <p>${symbols-table}</p>
+  <p>
+    <p><label>Symbol ${name-edit} Measure ${measure-edit}</label></p>
+    <p><label>Description ${desc-edit} Img ${imglink-edit}</label></p>
+  	<p>${add-button}</p>
+  </p>
+</div>
+</message>
+
+
+
+</messages>
+

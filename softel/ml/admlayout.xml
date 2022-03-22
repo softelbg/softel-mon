@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<messages>
+
+<message id="Admin Panel">
+
+<div class="ks-panel-1">
+  <div class="ks-panel-1">
+    <p>${killall-button}</p>
+    <p><label>User (dummy user login) ${user-edit}</label> ${userfilter-checkbox}</p>
+  </div>
+  
+  <div class="ks-panel-1">
+	  <p>
+	    <p><label>New Machine Templates ${machine-edit} ${machine-desc-edit}</label></p>
+	  </p>
+	  <p>
+	    ${Go-button}
+	  </p>
+	  <p>
+	  	<label>Result: ${result-edit}</label>
+	  </p>
+  </div>
+  
+  <div class="ks-panel-1">
+  <p>
+  	<p><label>Machines List</label></p>
+    ${machines-table}
+  </p>
+  </div>
+</div>
+
+</message>
+
+
+
+</messages>
+
